@@ -17,17 +17,19 @@
 </head>
 
 <body>
-    <div class="circles">
-        <img class="littleCircle" src="assets/little-circle-blur.svg" alt="Little circle blur">
-    </div>
+
     <div class="container">
-        <div class="newsletterCardContainer">
+        <div class="circles">
+            <img class="littleCircle" src="assets/little-circle-blur.svg" alt="Little circle blur">
+        </div>
+        <div class="newsletterCardContainer" id="cardContainer">
             <div class="titleCard">
                 <h2> Assine nossa <span>Newsletter</span> </h2>
                 <h3> e fique por dentro de tudo </h3>
             </div>
-            <input class="inputDefault" placeholder="Digite seu E-mail...">
-            <button href="" class="inputButton"> assinar </button>
+            <input id="inputEmail" class="inputDefault" placeholder="Digite seu E-mail...">
+            <span class="messageError"></span>
+            <button id="buttonSubmitEmail" class="inputButton"> assinar </button>
         </div>
         <p> UI & Code by Reinaldo Sales </p>
     </div>

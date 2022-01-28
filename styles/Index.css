@@ -1,3 +1,7 @@
+html {
+    overflow: hidden;
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -23,11 +27,12 @@ p {
 }
 
 .newsletterCardContainer {
-    width: 47.2rem;
-    height: 30.2rem;
+    width: 35%;
+    height: 35%;
     background-color: var(--whiteDefaultColor);
     border-radius: .8rem;
     box-shadow: var(--boxShadowCard);
+    padding: 1.6rem 2.6rem;
 }
 
 .newsletterCardContainer {
@@ -59,4 +64,19 @@ p {
 .container>p {
     position: fixed;
     top: 80rem;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1150px) {
+    .newsletterCardContainer {
+        width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    .newsletterCardContainer {
+        width: 70%;
+    }
 }
