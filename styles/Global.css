@@ -12,6 +12,7 @@ html {
     --placeholderColor: #D8D8D8;
     --linearBackgroundButton: linear-gradient(265.92deg, #56D672 0.5%, #7CF797 100%);
     --boxShadowButton: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    --boxShadowCard: 0px 0px 10px #56D672;
     font-size: 62.5%;
     font-family: 'Poppins', sans-serif;
 }
@@ -28,4 +29,21 @@ button.inputButton {
     font-weight: 700;
     font-size: 2.4rem;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+input.inputDefault {
+    width: 39.4rem;
+    height: 6rem;
+    background: none;
+    border-radius: 8px;
+    border: 2px solid #56D672;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    outline: 0;
+}
+
+input.inputDefault::placeholder {
+    color: var(--placeholderColor);
 }
